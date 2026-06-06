@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex & Jordan are getting married!</title>
+    <!-- Google Fonts -->
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap)" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2F3E46;
+            --accent-color: #CAD2C5;
+            --text-color: #354F52;
+            --bg-color: #F4F1DE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(47, 62, 70, 0.7), rgba(47, 62, 70, 0.7)), url('[images.unsplash.com](https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80)') center/cover;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+
+        /* Details Section */
+        .details {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .details h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .detail-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* RSVP Section */
+        .rsvp-section {
+            background-color: var(--accent-color);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .rsvp-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1a2327;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <p>You are invited to the wedding of</p>
+        <h1>Alex & Jordan</h1>
+        <p>October 12, 2026</p>
+    </section>
+
+    <section class="details">
+        <h2>When & Where</h2>
+        <div class="details-grid">
+            <div class="detail-card">
+                <h3>The Ceremony</h3>
+                <p><strong>4:00 PM</strong></p>
+                <p>The Botanical Gardens</p>
+                <p>123 Floral Avenue<br>Cityville, ST 12345</p>
+            </div>
+            <div class="detail-card">
+                <h3>The Reception</h3>
+                <p><strong>6:00 PM</strong></p>
+                <p>The Grand Hall</p>
+                <p>456 Celebration Lane<br>Cityville, ST 12345</p>
+            </div>
+        </div>
+        <p style="font-style: italic;">Dinner, drinks, and awkward dancing to follow.</p>
+    </section>
+
+    <section class="rsvp-section">
+        <h2>We'd love for you to join us</h2>
+        <p style="margin-bottom: 30px;">Please kindly respond by September 1st, 2026.</p>
+        <!-- Replace the # with a link to a Google Form for easy RSVP tracking -->
+        <a href="#" class="btn" onclick="alert('Link this button to a Google Form or RSVP service!')">RSVP Now</a>
+    </section>
+
+</body>
+</html>
