@@ -1,2 +1,2 @@
-# Vinnakota_wedding_invite-
+# Vinnakota_wedding_invite
 Welcome
